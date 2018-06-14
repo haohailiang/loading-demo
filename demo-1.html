@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>loading事件</title>
+</head>
+<body>
+<h1> 文档加载事件 </h1>
+<script>
+document.onreadystatechange = function() {
+	var docState = document.readyState;
+	console.log( docState );
+
+	// interactive 用户可以进行交互
+	// complete 载入完成
+}
+</script>
+</body>
+</html>
